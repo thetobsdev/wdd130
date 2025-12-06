@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>RapidWave Adventures — Home</title>
+    <meta name="description"
+        content="RapidWave Adventures — thrilling white-water rafting trips, guided tours, and family-friendly river experiences." />
+    <meta name="author" content="Tobiloba Oluwasegun" />
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- header (shared) -->
+    <header>
+        <img src="images/logo.png" alt="RapidWave Adventures logo" class="logo">
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- HERO (full-width) -->
+    <section class="hero hero-home" aria-labelledby="hero-heading">
+        <img src="images/hero-home.jpg" alt="Rafting team navigating rapids" class="hero-img">
+        <h1 id="hero-heading">Catch the Rush — White Water Rafting for Every Adventurer</h1>
+
+        <div class="hero-cta">
+            <p>Ready to ride the rapids? Book a trip or learn more about our adventures.</p>
+            <a class="btn" href="trips.html">Explore Trips</a>
+        </div>
+    </section>
+
+    <!-- newsletter + grid content -->
+    <main class="container">
+        <!-- newsletter -->
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <h2 id="newsletter-heading">Join our Newsletter</h2>
+            <p>Get trip alerts, safety tips, and monthly discounts straight to your inbox.</p>
+            <form class="newsletter-form" action="#" method="post" aria-label="Subscribe to newsletter">
+                <label for="nl-name" class="visually-hidden">Name</label>
+                <input id="nl-name" name="name" type="text" placeholder="Your name" required>
+
+                <label for="nl-email" class="visually-hidden">Email</label>
+                <input id="nl-email" name="email" type="email" placeholder="Your email" required>
+
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- grid content: two images + text -->
+        <section class="home-grid" aria-label="About site and offerings">
+            <article class="grid-item">
+                <img src="images/feature1.jpg" alt="Guides preparing rafts" />
+                <h3>Expert Guides</h3>
+                <p>Our certified guides ensure safe, fun, and educational river experiences for beginners and pros
+                    alike.</p>
+            </article>
+
+            <article class="grid-item">
+                <img src="images/feature2.jpg" alt="Family enjoying gentle river float" />
+                <h3>Trips for Everyone</h3>
+                <p>From family floats to adrenaline-pumping rapids, we offer a range of trip types and durations to
+                    match your pace.</p>
+            </article>
+
+            <article class="grid-item">
+                <img src="images/feature3.jpg" alt="Group celebrating at riverside" />
+                <h3>Custom & Group Bookings</h3>
+                <p>Planning a corporate event or birthday adventure? We customize itineraries to suit groups of all
+                    sizes.</p>
+            </article>
+
+            <article class="grid-item">
+                <img src="images/feature4.jpg" alt="Safety gear and helmets" />
+                <h3>Safety First</h3>
+                <p>We provide top-tier safety equipment, thorough briefings, and strict group-to-guide ratios for peace
+                    of mind.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- CTA strip -->
+    <section class="cta-strip">
+        <p>"Life is a journey, not a destination..." — join us and finish strong.</p>
+        <a class="btn-outline" href="trips.html">See All Trips</a>
+    </section>
+
+    <!-- footer (shared) -->
+    <footer>
+        <p>© 2025 RapidWave Adventures – Tobiloba Oluwasegun</p>
+        <nav class="socialmedia" aria-label="Social Media Links">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
