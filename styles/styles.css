@@ -1,51 +1,92 @@
+:root {
+    --primary-color: #0b4f6c;
+    --accent-color: #f8f9fa;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* HEADER AND NAVIGATION         */
+/* ============================= */
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 nav {
-  background-color: #333;
-  padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 nav a {
-  color: white;
-  padding: 10px;
-  display: block;
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
-h1 {
-  color: #333;
+nav a:hover {
+    color: #0a3a4f;
+}
+
+/* ============================= */
+/* GRID LAYOUT FOR MAIN + ASIDE  */
+/* ============================= */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* aside left, main right */
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 main {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-main img {
-  width: 150px;
-  height: auto;
-  border: 2px solid #ccc;
-  padding: 5px;
-  box-shadow: 0 0 10px #ccc;
+    grid-row: 1;
 }
 
 aside {
-  width: 300px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f4f4f4;
-  color: #333;
+    grid-row: 1;
 }
 
-aside img {
-  width: 200px;
-  height: auto;
+/* ============================= */
+/* MAIN CONTENT                  */
+/* ============================= */
+h1 {
+    font-family: var(--heading-font);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-p {
-  padding: 0;
+main img, aside img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
+/* ============================= */
+/* FOOTER                        */
+/* ============================= */
 footer {
-  margin-top: 20px;
-  border-top: 1px solid #ccc;
-  text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
 }
