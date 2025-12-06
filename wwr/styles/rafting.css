@@ -1,75 +1,101 @@
-/* CSS Variables */
+/*==========================================
+   COLOR VARIABLES
+==========================================*/
 :root {
-    --primary-color: #0077b6;
-    --accent1-color: #00b4d8;
-    --body-font: Arial, sans-serif;
-    --heading-font: 'Georgia', serif;
+    --primary-color: #0b4f6c;
+    --accent1-color: #ffffff;
+    --accent2-color: #f8f9fa;
+
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Reset box model */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* BODY */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background: var(--accent2-color);
 }
 
-/* Center page content */
+/* PAGE WIDTH */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-/* Headings */
+/* HEADINGS */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* Basic spacing */
+/* BASIC SPACING */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-/* Remove underline from social media links */
+/* SOCIAL MEDIA LINKS */
 .socialmedia a {
     text-decoration: none;
 }
 
-/* Hero Section */
+/* LOGO */
+.logo {
+    width: 120px;
+    margin: 16px;
+}
+
+/* HERO AREA */
 .hero {
     position: relative;
 }
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
+
+/* HERO TITLE */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: #fff;
+    opacity: 0.7;
 }
+
+/* ARTICLE IN HERO */
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255,255,255,0.85);
     padding: 12px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 8px;
 }
+
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 8px;
+    margin-left: 16px;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px 0;
 }
