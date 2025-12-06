@@ -1,101 +1,145 @@
-/*==========================================
-   COLOR VARIABLES
-==========================================*/
+/* =========================
+   :root Variables
+========================= */
 :root {
-    --primary-color: #0b4f6c;
-    --accent1-color: #ffffff;
-    --accent2-color: #f8f9fa;
-
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Verdana, Geneva, Tahoma, sans-serif;
+  --primary-color: #0b4f6c;
+  --accent2-color: #f8f9fa;
+  --heading-font: Arial, Helvetica, sans-serif;
+  --body-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* =========================
+   Universal Reset
+========================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* BODY */
+/* =========================
+   Body
+========================= */
 body {
-    font-family: var(--body-font);
-    color: var(--primary-color);
-    background: var(--accent2-color);
+  font-family: var(--body-font);
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  line-height: 1.6;
 }
 
-/* PAGE WIDTH */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+/* =========================
+   Header
+========================= */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
 }
 
-/* HEADINGS */
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+header img {
+  max-width: 120px;
+  height: auto;
 }
 
-/* BASIC SPACING */
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+header nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
 }
 
-/* SOCIAL MEDIA LINKS */
-.socialmedia a {
-    text-decoration: none;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-/* LOGO */
-.logo {
-    width: 120px;
-    margin: 16px;
-}
-
-/* HERO AREA */
+/* =========================
+   Hero Section
+========================= */
 .hero {
-    position: relative;
+  position: relative;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* HERO TITLE */
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: #fff;
-    opacity: 0.7;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-family: var(--heading-font);
+  font-size: 3rem;
+  color: var(--accent2-color);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* ARTICLE IN HERO */
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    background: rgba(255,255,255,0.85);
-    padding: 12px;
-    width: 80%;
-    margin-left: 10%;
-    border-radius: 8px;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  max-width: 400px;
 }
 
 .hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 16px;
-    border-radius: 4px;
+  float: right;
+  width: 100px;
+  height: auto;
+  margin-left: 1rem;
 }
 
-/* FOOTER */
+/* =========================
+   Main Sections
+========================= */
+section {
+  padding: 2rem;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Footer
+========================= */
 footer {
-    text-align: center;
-    padding: 20px 0;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.socialmedia a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.socialmedia a img {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
