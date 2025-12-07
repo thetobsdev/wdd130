@@ -35,13 +35,11 @@
             <h2>Our Location & Contact</h2>
 
             <p><strong>Address:</strong> 123 River Lane, Adventure City</p>
-            <p><strong>Phone:</strong> (555) 123-4567</p>
-            <p><strong>Email:</strong> info@rapidwaveadventures.com</p>
+            <p><strong>Phone:</strong> +234 7084649324</p>
+            <p><strong>Email:</strong> toluwasegun@byupathway.edu</p>
 
             <!-- Map iframe -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0396671107565!2d-122.41941518468161!3d37.77492977975954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c80b0a7bf%3A0xb2f972d4b8b0e!2sRiver!5e0!3m2!1sen!2sus!4v1700000000000"
-                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <img src="images/map.jpg" alt="Map showing our location">
         </section>
 
         <!-- EMPLOYEE SECTION -->
@@ -69,26 +67,47 @@
             <h2>Send Us a Message</h2>
 
             <form action="#" method="post">
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
                 <fieldset>
-                    <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                    <legend>Contact Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
                 </fieldset>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <fieldset>
+                    <legend>Purpose of Message</legend>
 
-                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                    <label>
+                        <input type="radio" id="general" name="purpose" value="general">
+                        General Inquiry
+                    </label>
 
-                <button type="submit">Submit Message</button>
+                    <label>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" id="feedback" name="purpose" value="feedback">
+                        Website Feedback
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Subscribe to our newsletter?
+                    </label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
