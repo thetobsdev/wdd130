@@ -7,8 +7,6 @@
   --primary:#0b4f6c;
   --accent:#f8f9fa;
   --muted:#6b7b84;
-  --accent-dark: #093641;
-  --maxw: 1200px;
   --content-w: 840px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
