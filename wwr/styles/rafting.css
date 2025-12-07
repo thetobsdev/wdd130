@@ -1,17 +1,18 @@
 /* ---------------------------------------------
    rafting.css — shared across site
-   --------------------------------------------- */
+--------------------------------------------- */
 
 /* variables & reset */
 :root{
   --primary:#0b4f6c;
   --accent:#f8f9fa;
   --muted:#6b7b84;
-  --accent-dark: #093641;
-  --maxw: 1200px;
   --content-w: 840px;
 }
-*{box-sizing:border-box;margin:0;padding:0}
+*,
+*::before,
+*::after { box-sizing:border-box; margin:0; padding:0; }
+
 html,body{height:100%}
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -61,6 +62,26 @@ nav a:hover{background:var(--primary); color:var(--accent)}
   position:absolute; left:2rem; top:2.25rem;
   background: rgba(11,79,108,0.8); color:#fff; padding:0.6rem 1rem;
   border-radius:6px; font-size:1.8rem; max-width:60%;
+}
+
+/* Hero article overlay + image float */
+.hero article {
+  position: absolute; 
+  top: 50%; 
+  left: 2rem; 
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 45%;
+}
+
+.hero article img {
+  float: right;
+  width: 120px;
+  height: auto;
+  margin-left: 1rem;
+  border-radius: 4px;
 }
 
 /* hero CTA box */
